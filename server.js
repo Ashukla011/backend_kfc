@@ -19,7 +19,7 @@ app.use("/userApi", authRoute);
 app.use("/cartApi", authMiddleware, cartRoute);
 app.use("/addressApi", authMiddleware, addressRoute);
 app.use("/paymentApi", authMiddleware, paymentRoute);
-const PORT = process.env.PORT || 5000;
+let PORT = process.env.PORT ||5000;
 app.listen(PORT , async()=>{
    try{
     await connection;

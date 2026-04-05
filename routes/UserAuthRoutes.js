@@ -2,7 +2,7 @@ const express = require("express");
 const authRoute = express.Router();
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
-const { UserAuthModule } = require("../app/modules/UserAuthModule");
+const { UserAuthModule } = require("../modules/UserAuthModule");
 
 authRoute.use(express.json());
 
